@@ -1,0 +1,32 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Eat Da Burger app with node.js, MySQL, and Handlebars.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zizuar/Burger.git"
+  },
+  "keywords": [
+    "node.js",
+    "MySQL",
+    "Express",
+    "Handlebars"
+  ],
+  "author": "Donald P. Polansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zizuar/Burger/issues"
+  },
+  "homepage": "https://github.com/Zizuar/Burger#readme"
+}
