@@ -1,6 +1,6 @@
-INSERT INTO burgers (burger_name) VALUES ('Chicken Chili Burger');
-INSERT INTO burgers (burger_name) VALUES ('Green Eggs & Ham Burger');
-INSERT INTO burgers (burger_name) VALUES ('Spam n Cheddar Burger');
-INSERT INTO burgers (burger_name) VALUES ('Bacon Guac Burger');
-INSERT INTO burgers (burger_name) VALUES ('A1 Thick & Hearty Burger');
-INSERT INTO burgers (burger_name) VALUES ('Peanut Butter Patty Melt');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Chicken Chili Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Green Eggs & Ham Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Spam n Cheddar Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon Guac Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('A1 Thick & Hearty Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Peanut Butter Patty Melt', FALSE);
