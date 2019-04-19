@@ -3,17 +3,21 @@ var router = express.Router();
 var burgers = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    burgers.all(function(data) {
-      var hbsObject = {
-        burgers: data
-      };
-      console.log(hbsObject);
       res.redirect("/burgers");    
-      res.render("index", hbsObject);
     });
-  });
 
-router.post("/api/burgers", function (req, res) {
+router.get("/burgers", function(req, res) {   
+    burgers.all(function(data) {
+        var hbsObject = {
+          burgers: data
+        };
+        console.log(hbsObject);
+        res.render("index", hbsObject);
+    });
+});
+
+
+router.post("/burgers", function (req, res) {
     burgers.create(["name", "eaten"], [req.body.name, req.body.eaten], function (result) {
         res.json({
             id: result.insertId
@@ -21,7 +25,7 @@ router.post("/api/burgers", function (req, res) {
     });
 });
 
-router.put("/api/burgers/:id", function (req, res) {
+router.put("/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
     burgers.update({

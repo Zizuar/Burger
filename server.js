@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3128;
 app.engine("handlebars", hb({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 var routes = require("./controllers/burgers_controller.js");
